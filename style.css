@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     background: #f3f5fc;
+
 }
 
 .texto{
@@ -171,6 +172,37 @@
     height: 50%;
     top: 15%;
   }
+
+
+  .mensaje-encriptado> button {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 110%; /* Ajusta la posición según sea necesario */
+    padding: 1rem;
+    background-color: #0a3871;
+    color: #fff;
+    border-radius: 2rem;
+    font-family: 'Inter';
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transform: translateX(-50%);
+    transition: all .3s ease-in-out;
+}
+
+.mensaje-encriptado> button:hover {
+    background-color: #0a3871;
+}
+
+.mensaje-encriptado i {
+    font-size: 1rem;
+    margin-right: 5px;
+    color: #fff;
+}
+
+
+
 
 
 

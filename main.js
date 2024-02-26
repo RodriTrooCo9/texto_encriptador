@@ -49,3 +49,14 @@ function encriptar() {
         swal("Ooops!", "Debes ingresar un texto", "warning");
       }
   }
+
+  let $content = document.getElementById('texto');
+  let $btn = document.getElementById('btn');
+  let $title = document.getElementById('titulo-mensaje');
+  
+  $btn.addEventListener('click', (e) => {
+      $content.select();
+      document.execCommand('copy');
+      $title.innerHTML = '¡Texto copiado!';
+  });
+  
